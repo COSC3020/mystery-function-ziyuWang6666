@@ -16,11 +16,11 @@ function mystery(a) {
 ## Answer
 Function mystery will return the largest element in the a.
 
-if a = [9,5,2,8]; mystery function will return 5
+if a = [9,5,2,8]; mystery function will return 9
 
 if a = ["z","x","y"]; mystery function will return z.
 
-  ### explain
+## explain
 
 When a = [9,5,2,8], **a.length** is 4, will not return a[0]=9.
 
@@ -34,5 +34,7 @@ If foo > a[0], return foo, else return a[0]. foo=8 > a[0]=2 return foo=8.
 Then callback stack again to get a[0]=5, foo=8>a[0]=5, return foo=8.
 Again callback stack a[0]= 9, foo=8, 9>8, return a[0]=9.
 Then because of foo < a[0], so return a[0] = 5;
+
 //get help from Ta: Ali
+
 //I didn't think about every time the calling mystery function actually does not return foo at once. It has something callback the previous stack to get a[0] to compare.
